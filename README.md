@@ -1,21 +1,12 @@
-# Aurora by Ketlin Roberto — PWA Sprint 2
+# Aurora PWA Sprint 3
 
-Versão estática funcional, sem React, sem build e sem dependências.
+Versão premium do app Aurora by Ketlin Roberto.
 
-## Como publicar no GitHub/Netlify
-1. Apague os arquivos antigos do repositório ou substitua por estes.
-2. Envie `index.html`, `manifest.webmanifest` e a pasta `assets`.
-3. Commit changes.
-4. O Netlify fará o deploy automaticamente.
+## Como subir no GitHub
+1. Descompacte o ZIP.
+2. Entre na pasta `aurora_ketlin_pwa_sprint3`.
+3. Selecione `index.html`, `manifest.webmanifest`, `service-worker.js`, `README.md` e a pasta `assets`.
+4. Envie esses arquivos para a raiz do repositório `aurora-ketlin-app`.
+5. Faça commit. O Netlify atualiza automaticamente.
 
-## O que funciona
-- Navegação inferior clicável.
-- Foto e logo locais.
-- Agenda do paciente.
-- Diário emocional salvo no localStorage do navegador.
-- Painel Ketlin com senha 1234.
-- Adicionar/remover sessões.
-- Botões de WhatsApp.
-
-## Próximo passo
-Conectar Supabase para login e agenda real em nuvem.
+Senha do painel Ketlin: 1234
