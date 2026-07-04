@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#b9945f" />
+<link rel="manifest" href="manifest.webmanifest" />
+<title>Aurora | Ketlin Roberto</title>
+<style>
+:root{--bg:#f7f0e7;--paper:#fffaf3;--ink:#211b17;--muted:#7b6b5d;--gold:#b9945f;--gold2:#d7bd86;--line:#eadfce;--dark:#16110d;--shadow:0 20px 55px rgba(60,42,20,.16);--r:26px}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#fffaf1 0,#f7f0e7 45%,#efe0cc 100%);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink)}button,a,input,textarea,select{font:inherit}button,a{cursor:pointer}.phone{width:min(430px,100%);min-height:100vh;margin:0 auto;background:linear-gradient(180deg,#fffaf3,#f4eadc);position:relative;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,.04)}header{height:78px;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;position:sticky;top:0;z-index:10;background:rgba(255,250,243,.85);backdrop-filter:blur(14px);border-bottom:1px solid rgba(234,223,206,.7)}.brand{display:flex;gap:12px;align-items:center}.brand img{width:42px;height:42px;border-radius:14px;object-fit:cover}.brand b{display:block;letter-spacing:.02em}.brand span{font-size:12px;color:var(--muted)}.iconbtn{border:0;background:#fff;border-radius:16px;width:42px;height:42px;box-shadow:0 8px 22px rgba(83,61,33,.1);font-size:18px}.view{display:none;padding:16px 18px 112px;animation:show .22s ease}.view.active{display:block}@keyframes show{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{background:linear-gradient(135deg,#211812,#7d603c 58%,#c7a66c);border-radius:32px;min-height:280px;color:#fff;position:relative;overflow:hidden;padding:28px;box-shadow:var(--shadow)}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 10%,rgba(255,255,255,.2),transparent 35%)}.hero h1{font-size:34px;line-height:.98;margin:10px 0 16px;max-width:250px}.hero p{margin:0;color:#f1dfc2}.hero .cta{display:inline-flex;gap:8px;align-items:center;background:#fff;color:#20170f;text-decoration:none;padding:12px 16px;border-radius:999px;font-weight:700}.hero img{position:absolute;right:-20px;bottom:0;width:210px;height:245px;object-fit:cover;border-radius:36px 0 0 0;filter:saturate(.95)}.section-title{margin:24px 4px 12px;display:flex;justify-content:space-between;align-items:end}.section-title h2{margin:0;font-size:20px}.section-title span{font-size:12px;color:var(--muted)}.card{background:rgba(255,250,243,.88);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:0 16px 40px rgba(81,56,24,.08);margin-bottom:14px}.session{display:flex;align-items:center;justify-content:space-between;gap:14px;background:#fff;border:1px solid var(--line);padding:14px;border-radius:22px;margin:10px 0}.session b{display:block}.session span,.small{font-size:13px;color:var(--muted)}.pill{display:inline-flex;border-radius:999px;padding:8px 12px;background:#f4eadb;color:#7c5d32;font-size:12px;font-weight:700}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.quick{min-height:118px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:16px;text-align:left}.quick strong{display:block;font-size:17px;margin:8px 0}.quick span{color:var(--muted);font-size:13px}.tabbar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);width:min(398px,calc(100% - 28px));height:76px;background:rgba(31,22,14,.92);backdrop-filter:blur(16px);border-radius:28px;display:grid;grid-template-columns:repeat(5,1fr);padding:8px;z-index:20;box-shadow:0 24px 55px rgba(0,0,0,.28)}.tabbar button{border:0;background:transparent;color:#c8bdaa;border-radius:20px;font-size:11px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}.tabbar button.active{background:linear-gradient(135deg,#b9945f,#e4c98a);color:#1d150e;font-weight:800}.tabbar i{font-style:normal;font-size:20px}h1{margin:6px 0 14px;font-size:30px}.list{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px;margin:10px 0}.list b{display:block}.list span{display:block;font-size:13px;color:var(--muted);margin-top:3px}input,textarea,select{width:100%;border:1px solid var(--line);background:#fff;border-radius:18px;padding:14px 15px;margin:8px 0;color:var(--ink);outline:none}textarea{min-height:120px;resize:vertical}.primary{width:100%;border:0;border-radius:18px;background:linear-gradient(135deg,#b9945f,#e6c987);color:#1a120b;font-weight:900;padding:15px;margin:8px 0;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px}.secondary{width:100%;border:1px solid var(--line);border-radius:18px;background:#fff;color:var(--ink);font-weight:700;padding:14px;margin:8px 0}.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.chips button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 13px}.chips button.selected{background:#211812;color:#fff;border-color:#211812}.profile-photo{width:100%;height:260px;object-fit:cover;border-radius:28px;margin:8px 0 14px}.adminbar{display:none}.toast{position:fixed;left:50%;bottom:104px;transform:translateX(-50%) translateY(20px);background:#17110c;color:#fff;padding:13px 18px;border-radius:999px;opacity:0;transition:.25s;z-index:40;box-shadow:0 20px 40px rgba(0,0,0,.25);font-size:14px}.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}.empty{padding:18px;border:1px dashed #d9c8ad;border-radius:20px;color:var(--muted);text-align:center}.logo-large{display:block;width:140px;height:140px;object-fit:contain;border-radius:32px;margin:8px auto 16px;background:white}.lock-screen{padding-top:40px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px;text-align:center}.stat b{font-size:22px;display:block}.stat span{font-size:11px;color:var(--muted)}@media(max-width:360px){.hero img{width:170px}.hero h1{font-size:29px}.tabbar{width:calc(100% - 18px)}}
+</style>
+</head>
+<body>
+<div class="phone">
+<header>
+  <div class="brand"><img src="assets/logo.jpg" alt="Logo Ketlin"><div><b>Aurora</b><span>by Ketlin Roberto</span></div></div>
+  <button class="iconbtn" id="adminBtn" aria-label="Painel Ketlin">🔒</button>
+</header>
+
+<main>
+<section id="home" class="view active">
+  <div class="hero"><p>Seu espaço seguro</p><h1>Respire. Hoje é um novo começo.</h1><a class="cta" href="https://wa.me/5541999197589" target="_blank">💬 WhatsApp</a><img src="assets/ketlin.jpg" alt="Ketlin Roberto"></div>
+  <div class="section-title"><h2>Próxima sessão</h2><span>Confirmada</span></div>
+  <div class="card"><div id="nextSession"></div></div>
+  <div class="section-title"><h2>Acessos rápidos</h2><span>Hoje</span></div>
+  <div class="grid">
+    <button class="quick goto" data-tab="diario">💛<strong>Humor</strong><span>Registrar como estou me sentindo</span></button>
+    <button class="quick goto" data-tab="agenda">📅<strong>Agenda</strong><span>Ver sessões marcadas</span></button>
+    <button class="quick goto" data-tab="biblioteca">🌿<strong>Exercícios</strong><span>Respiração e autocuidado</span></button>
+    <button class="quick goto" data-tab="perfil">👤<strong>Perfil</strong><span>Dados e contato</span></button>
+  </div>
+</section>
+
+<section id="agenda" class="view">
+  <h1>Minha agenda</h1>
+  <div class="card"><div id="sessionsList"></div><a class="primary" href="https://wa.me/5541999197589?text=Olá,%20gostaria%20de%20agendar%20uma%20sessão." target="_blank">Agendar pelo WhatsApp</a></div>
+</section>
+
+<section id="diario" class="view">
+  <h1>Diário emocional</h1>
+  <div class="card"><p class="small">Como você está se sentindo hoje?</p><div class="chips" id="moodChips"></div><textarea id="diaryText" placeholder="Escreva livremente sobre seu dia..."></textarea><button class="primary" id="saveDiary">Salvar registro</button></div>
+  <div class="section-title"><h2>Registros</h2><span>Histórico</span></div><div id="diaryList"></div>
+</section>
+
+<section id="biblioteca" class="view">
+  <h1>Biblioteca</h1>
+  <div class="card"><div id="contentList"></div></div>
+</section>
+
+<section id="perfil" class="view">
+  <h1>Perfil</h1>
+  <div class="card"><img class="profile-photo" src="assets/ketlin.jpg" alt="Ketlin"><h2>Ketlin Roberto</h2><p>Psicóloga · Atendimento online e presencial em Curitiba.</p><p class="small">Aplicativo Aurora: acompanhamento terapêutico entre uma sessão e outra.</p><a class="primary" href="https://wa.me/5541999197589" target="_blank">Falar com a Ketlin</a></div>
+</section>
+
+<section id="admin" class="view">
+  <div id="adminLogin" class="card lock-screen"><img class="logo-large" src="assets/logo.jpg"><h1>Painel Ketlin</h1><p class="small">Digite a senha para acessar a agenda administrativa.</p><input id="adminPass" type="password" placeholder="Senha"><button class="primary" id="loginAdmin">Entrar</button><button class="secondary" id="exitAdmin">Voltar</button></div>
+  <div id="adminPanel" style="display:none"><h1>Painel Ketlin</h1><div class="stats"><div class="stat"><b id="statSessions">0</b><span>Sessões</span></div><div class="stat"><b id="statDiary">0</b><span>Diários</span></div><div class="stat"><b>6</b><span>Conteúdos</span></div></div><div class="card"><h2>Adicionar sessão</h2><input id="pName" placeholder="Nome do paciente"><input id="pDate" type="date"><input id="pTime" type="time"><select id="pType"><option>Online</option><option>Presencial</option></select><button class="primary" id="addSession">Adicionar sessão</button></div><div class="card"><h2>Agenda</h2><div id="adminSessions"></div></div><button class="secondary" id="logoutAdmin">Sair do painel</button></div>
+</section>
+</main>
+
+<nav class="tabbar" id="tabbar">
+  <button class="active" data-tab="home"><i>🏠</i>Início</button>
+  <button data-tab="agenda"><i>📅</i>Agenda</button>
+  <button data-tab="diario"><i>💛</i>Diário</button>
+  <button data-tab="biblioteca"><i>📖</i>Conteúdos</button>
+  <button data-tab="perfil"><i>👤</i>Perfil</button>
+</nav>
+<div class="toast" id="toast">Salvo com sucesso</div>
+</div>
+<script>
+const W='5541999197589';
+const moods=['Calma','Ansiosa','Triste','Confiante','Cansada','Grata'];
+const contents=['Ansiedade','Autoestima','Relacionamentos','Autoconhecimento','Traumas','Burnout'];
+let state=JSON.parse(localStorage.getItem('auroraState')||'null')||{sessions:[{name:'Paciente exemplo',date:'2026-07-08',time:'15:00',type:'Online',status:'Confirmada'}],diary:[],mood:'Calma'};
+function save(){localStorage.setItem('auroraState',JSON.stringify(state))}
+function toast(t){const el=document.getElementById('toast');el.textContent=t;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),1800)}
+function fmtDate(d){if(!d)return ''; const [y,m,day]=d.split('-'); return `${day}/${m}/${y}`}
+function sessionHTML(s,i,admin=false){return `<div class="session"><div><b>${fmtDate(s.date)} às ${s.time}</b><span>${s.name} · ${s.type} · ${s.status}</span></div>${admin?`<button class="iconbtn del" data-i="${i}">🗑️</button>`:'<span class="pill">✓</span>'}</div>`}
+function render(){
+ const sorted=[...state.sessions].sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
+ document.getElementById('nextSession').innerHTML= sorted.length?sessionHTML(sorted[0],0):'<div class="empty">Nenhuma sessão agendada.</div>';
+ document.getElementById('sessionsList').innerHTML= sorted.length? sorted.map((s,i)=>sessionHTML(s,i)).join(''):'<div class="empty">Nenhuma sessão agendada.</div>';
+ document.getElementById('adminSessions').innerHTML= state.sessions.length? state.sessions.map((s,i)=>sessionHTML(s,i,true)).join(''):'<div class="empty">Agenda vazia.</div>';
+ document.getElementById('statSessions').textContent=state.sessions.length; document.getElementById('statDiary').textContent=state.diary.length;
+ document.getElementById('moodChips').innerHTML=moods.map(m=>`<button class="mood ${state.mood===m?'selected':''}" data-mood="${m}">${m}</button>`).join('');
+ document.getElementById('diaryList').innerHTML=state.diary.length?state.diary.map(d=>`<div class="card"><b>${d.date} · ${d.mood}</b><p>${d.text||'Sem observações.'}</p></div>`).join(''):'<div class="empty">Nenhum registro ainda.</div>';
+ document.getElementById('contentList').innerHTML=contents.map(c=>`<div class="list"><div><b>${c}</b><span>Conteúdos, exercícios e reflexões</span></div><span>›</span></div>`).join('');
+ document.querySelectorAll('.del').forEach(b=>b.onclick=()=>{state.sessions.splice(Number(b.dataset.i),1);save();render();toast('Sessão removida')});
+ document.querySelectorAll('.mood').forEach(b=>b.onclick=()=>{state.mood=b.dataset.mood;save();render()});
+}
+function show(tab){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(tab).classList.add('active');document.querySelectorAll('.tabbar button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));document.getElementById('tabbar').style.display=tab==='admin'?'none':'grid';window.scrollTo(0,0)}
+document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.tab)));
+document.querySelectorAll('.goto').forEach(b=>b.addEventListener('click',()=>show(b.dataset.tab)));
+document.getElementById('adminBtn').onclick=()=>show('admin');document.getElementById('exitAdmin').onclick=()=>show('home');
+document.getElementById('loginAdmin').onclick=()=>{if(document.getElementById('adminPass').value==='1234'){document.getElementById('adminLogin').style.display='none';document.getElementById('adminPanel').style.display='block';toast('Bem-vinda, Ketlin')}else toast('Senha incorreta')};
+document.getElementById('logoutAdmin').onclick=()=>{document.getElementById('adminPass').value='';document.getElementById('adminLogin').style.display='block';document.getElementById('adminPanel').style.display='none';show('home')};
+document.getElementById('addSession').onclick=()=>{const name=pName.value.trim(),date=pDate.value,time=pTime.value,type=pType.value;if(!name||!date||!time){toast('Preencha todos os campos');return}state.sessions.unshift({name,date,time,type,status:'Confirmada'});pName.value='';pDate.value='';pTime.value='';save();render();toast('Sessão adicionada')};
+document.getElementById('saveDiary').onclick=()=>{const text=document.getElementById('diaryText').value.trim();state.diary.unshift({date:new Date().toLocaleDateString('pt-BR'),mood:state.mood,text});document.getElementById('diaryText').value='';save();render();toast('Registro salvo')};
+render();
+</script>
+</body>
+</html>
